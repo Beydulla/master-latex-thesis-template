@@ -1,0 +1,58 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage{oeNIKstyle}
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{wrapfig}
+\usepackage{hyperref}
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{nicefrac}
+\graphicspath{{images/}}
+\usepackage{subfig}
+\usepackage[titletoc]{appendix}
+\usepackage{pdfpages}
+\usepackage{subfig}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{fontawesome} 
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=cyan,
+}
+\usepackage{minted}
+\usemintedstyle{tango}
+\usepackage{verbatim}
+\input{js_template}
+\setlength{\parindent}{0.8cm}
+
+\author{Beydulla Zeynalov}
+\torzsKonyvSzam{T/XXXXXX/XXXXXXX/N}
+\neptunNumber{XXXXXX}
+\engTitleFirstRow{Development of a Web Application }
+\engTitleSecondRow{for Geometric Calibration of Industrial Robots}
+\supervisor{Dr. Galambos Péter}
+\deadlineDate{2020. December 15.}
+\setPageNumbering{1}{0}
+\makedefaultpagestyle
+
+\begin{document}
+    \maketitle
+    \makeassigmentpage
+	\setcounter{page}{1} % start counting pages from here
+	\setalgorithmcounter % set up algorithm numbering
+	\maketoc
+	
+    \input{chapters/introduction}
+    \input{chapters/chapter2}
+    \input{chapters/chapter3}
+    \input{chapters/chapter4}
+    \input{chapters/chapter5}
+    \input{chapters/chapter6}
+    \input{references}
+
+\end{document}
